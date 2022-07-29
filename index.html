@@ -1,143 +1,55 @@
-/*
-# Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
-Dark cyan: hsl(185, 75%, 39%)
-Very dark desaturated blue: hsl(229, 23%, 23%)
-Dark grayish blue: hsl(227, 10%, 46%)
-
-### Neutral
-
-Dark gray: hsl(0, 0%, 59%)
-
-## Typography
-
-### Body Copy
-
-- Font size (name and stats): 18px
-
-### Font
-
-- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
-- Weights: 400, 700
-*/
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html {
-  /*font-size: 10px; */
-  /* 10px / 16px = 0.625 = 62.5% */
-  /* Persentage of users browser font size setting */
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Kumbh Sans", sans-serif;
-  background-image: url("../images/bg-pattern-top.svg"),
-    url("../images/bg-pattern-bottom.svg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: left -80px top -300px, right -80px bottom -300px;
-  background-origin: padding-box;
-  background-size: 50%, 50%;
-  line-height: 1;
-  font-weight: 400;
-  background-color: hsl(185, 75%, 39%);
-}
-
-.profile-card-section {
-  max-width: 144rem;
-  height: 100vh;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.container {
-  width: 35rem;
-  background-color: #ffffff;
-  border-radius: 11px;
-  overflow: hidden;
-}
-
-.profile-card-header {
-  content: "";
-  background: url(../images/bg-pattern-card.svg) no-repeat;
-  width: 35rem;
-  height: 14rem;
-  position: relative;
-}
-
-.profile-img {
-  width: 9.6rem;
-  height: 9.6rem;
-  border: 5px solid #ffffff;
-  border-radius: 50%;
-  position: absolute;
-  top: 60%;
-  left: 35%;
-}
-
-.name {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-  margin-top: 6.8rem;
-  gap: 1.4rem;
-}
-
-.profile-name {
-  font-size: 1.8rem;
-  color: hsl(229, 23%, 23%);
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  gap: 0.8rem;
-}
-
-.profile-name span {
-  color: hsl(227, 10%, 46%);
-  font-weight: 400;
-}
-
-.location {
-  font-size: 1.6rem;
-  color: hsl(227, 10%, 46%);
-  font-weight: 400;
-  margin-bottom: 2.6rem;
-}
-
-.horizontal-rule {
-  border-top: 1px solid hsl(0, 0%, 59%);
-}
-
-.activity-list {
-  display: flex;
-  gap: 4.8rem;
-  padding: 2.4rem 4.8rem 0 4.8rem;
-}
-
-.activity-name {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Sabbir Ahmed | Frontend Mentor | Profile Card Component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <section class="profile-card-section">
+        <div class="container">
+          <div class="profile-card-header">
+            <img
+              class="profile-img"
+              src="./images/image-sabbir.jpg"
+              alt="Sabbir Ahmed"
+            />
+          </div>
+          <div class="name">
+            <p class="profile-name">Sabbir Ahmed<span>26</span></p>
+            <p class="location">Bangladesh</p>
+          </div>
+          <div class="horizontal-rule"><span></span></div>
+          <div class="activity-list">
+            <div class="activity-name">
+              <p class="profile-name">80k</p>
+              <p class="location">Followers</p>
+            </div>
+            <div class="activity-name">
+              <p class="profile-name">803k</p>
+              <p class="location">Likes</p>
+            </div>
+            <div class="activity-name">
+              <p class="profile-name">1.4k</p>
+              <p class="location">Photos</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
